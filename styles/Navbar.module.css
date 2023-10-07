@@ -15,9 +15,11 @@
 }
 
 .item:nth-child(2) {
-    flex: 1.5;
+    flex: 3;
 }
-
+.item:last-child{
+    flex: 2;
+}
 .menu {
     padding: 0;
     display: flex;
@@ -38,7 +40,8 @@
 .text {
     text-decoration: none;
     color: black;
-
+    font-family: 'MuseoModerno';
+    position: relative;
 }
 
 .text:hover {
@@ -74,11 +77,11 @@
     display: flex;
     align-items: center;
     list-style: none;
-    margin: 15px;
+    margin: 0px;
 }
 
 .right_bar_item {
-    margin: 25px;
+    margin: 10px;
     padding: 5px;
     position: relative;
     display: flex;
@@ -87,7 +90,7 @@
     color: #e8e8e8;
     background-color: #9081e2;
     font-size: 24px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     border: 1px solid #9081e2;
     border-radius: 5px;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);

@@ -1,0 +1,117 @@
+.container{
+    padding: 100px 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+    min-height: 50vh;
+    background: url('/image/background4.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title{
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 100px;
+    display: inline-block;
+    text-transform: capitalize;
+    color: white;
+    font-family: "Saira Stencil One";
+    margin: 0px 0px 380px 0px;
+}
+.step{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin: 70px 0px 0px 0px;
+    
+}
+.item{
+    flex: 1;
+}
+.item_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+.desc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'MuseoModerno';
+    text-align: center;
+    margin: 0px 40px 15px;
+    font-size: 18px;
+}
+.border_item{
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin: 0px 130px;
+    transition: all ease-in-out 0.5s;
+
+}
+.icon{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 15px;
+}
+.border_item:hover{
+    background: linear-gradient(
+        82.3deg,
+        rgb(172 117 253) 10.8%,
+        rgb(120 109 255) 94.3%
+      );
+    }
+.border_item::after{
+    background-color: #4a4848;
+    content: "";
+    height: 1px;
+    left: 130px;
+    position: absolute;
+    top: 50px;
+    width: 230px;
+}
+.border_item::before{
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #4a4848;
+    content: "";
+    height: 1px;
+    position: absolute;
+    top: 40px;
+    width: 13px;
+    left: 360px;
+}
+.border_item_none{
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin: 0px 130px;
+    transition: all ease-in-out 0.5s;
+
+}
+.border_item_none:hover{
+    background: linear-gradient(
+        82.3deg,
+        rgba(150, 93, 233, 1) 10.8%,
+        rgba(99, 88, 238, 1) 94.3%
+      );
+    }
